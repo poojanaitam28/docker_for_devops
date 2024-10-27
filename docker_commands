@@ -1,0 +1,36 @@
+# Docker Commands : 
+
+1. Docker Version Check
+docker --version
+
+2. Docker Installation
+sudo apt-get update
+sudo apt-get install docker.io
+
+3. Docker Service Status
+systemctl status docker
+
+4. User Group Management
+sudo usermod -aG docker ubuntu (to add user ubuntu to the Docker group)
+newgrp docker (to refresh group permissions)
+
+5. Managing Containers
+docker ps (list running containers)
+docker images (list available images)
+docker kill <container_id> (stop a container)
+docker rm <container_id> (remove a container)
+
+6. Building and Running Docker Images
+docker build -t java-app . (build a Docker image from the Dockerfile)
+docker run java-app:latest (run the built Java application container)
+
+7. Directory Navigation
+Navigated through directories related to a Java project:
+cd github/
+cd simple-java-docker/src
+pwd (print working directory)
+
+8. Dockerfile Management
+vim Dockerfile (open Dockerfile in vim)
+cat Dockerfile (display contents of the Dockerfile)
+rm Dockerfile (remove the Dockerfile)
