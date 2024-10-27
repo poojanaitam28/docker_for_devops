@@ -10,7 +10,7 @@ LABEL description="A simple Java application"
 WORKDIR /app
 
 # Copy source code into the container
-COPY Date-Time/Main.java /app/Main.java
+COPY Date-Time/Main.java .
 
 # Compile the Java code
 RUN javac Main.java
